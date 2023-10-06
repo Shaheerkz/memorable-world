@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body{
+    overflow: hidden !important;
+} */
+
+/* ----------------------------------------------------------------- Fonts CDN Links ----------------------------------------------------------------------*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Mogila\ Display\ Regular.otf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500;600;700&family=Philosopher:ital,wght@0,700;1,400&display=swap&family=Open+Sans:wght@400;500;600;700;800&");
+
+:root {
+    --btn-bg:#3B3B3B;
+    --text-white: #fff;
+    --bg-white: #fff;
+    --text-dark: #000;
+    --text-lightDark: #00000042;
+    --category-color: #541919;
+    --light-text: #3b3b3b;
+    --text-color: #3A3A3A;
+    --text-8: 8.5rem;
+    --text-7: 7rem;
+    --text-5: 5.5rem;
+    --text-head: 3.5rem;
+    --text-xl: ;
+    --text-2: 2.5rem;
+    --text-1: 1.5rem;
+    --text-sm: 1.6rem;
+    --hd-sm: 1.3rem;
+    --para-sm: 1.6rem;
+    --text-xs: 1rem;
+    --shadow-normal: 1px 1px 11px 0px rgb(105 105 177 / 20%);
+    --font-jost: 'Jost', sans-serif;
+    --font-philosopher: 'Philosopher', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-montesserat: 'Montserrat', sans-serif ;
+    font-size: 62.5%;
+  }
+ 
+
+/* @media (min-width:1600px){ */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--btn-bg);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--btn-bg);
+}
+.body-overlay-wrap {
+    position: relative;
+}
+.body-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-lightDark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transition: all ease 0.5s;
+}
+.head-sec {
+    background-color:var(--bg-white);
+    padding: 0 9px;
+    position: relative;
+}
+
+
+.btn-side {
+    justify-content: space-between;
+}
+.cross-button {
+    border: 0;
+    top: -38px;
+    position: absolute;
+    right: 35%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+.btn-side a {
+    background-color: var(--btn-bg);
+    border-radius: 34px;
+    font-family: var(--font-montesserat);
+    font-size: var(--text-1);
+    font-weight: bold;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    border: 3px solid transparent;
+    justify-content: center;
+    transition: 0.6s;
+}
+.btn-side a:hover {
+    border: 3px solid var(--btn-bg);
+    color: var(--btn-bg);
+    background-color: transparent;
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.book .img-fluid {
+    width: 86%;
+}
+a {
+    text-decoration: none;
+}
+.primary-navs {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+.primary-navs li {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.primary-navs li a::after, .drop-down-text::after  {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--btn-bg);
+    display: block;
+    position: relative;
+    top: 80.11px;
+}
+
+.primary-navs li a:hover::after, .drop-down-text:hover::after{
+    width: 100%;
+}
+
+
+.primary-navs a, .drop-down-text {
+    display: inline-block;
+    font-size: var(--text-1);
+    font-family: var(--font-montesserat);
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 13px 0;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.nav-btn {
+    background: var(--btn-bg);
+    color: var(--text-white);
+    padding: 5px 50px;
+    font-size: var(--text-1);
+    display: flex;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+.cross-button:hover{
+    background: var(--btn-bg);
+    color: var(--text-white);
+    padding: 5px 0px;
+    font-size: var(--text-sm);
+    display: flex;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+.cross-button{
+    background: var(--text-white);
+    color: var(--btn-bg);
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34px;
+    border: 3px solid var(--btn-bg) !important;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    color: var(--btn-bg);
+    border-color: var(--btn-bg);
+    background-color: transparent;
+}
+.logo img {
+    max-width: 157px;
+    height: auto;
+}
+
+.menu ul li a:hover {
+    color: var(--btn-bg);
+}
+
+
+
+
+
+
+
+
+
+
+.foot-sec {
+    background-color: var(--bg-white);
+}
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+.footer-content p {
+    font-family: "Montessrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--category-color);
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.icon-1 i {
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--btn-bg);
+    color: var(--category-color);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.icon-1 a {
+    text-decoration: none;
+}
+.icon-1 i:hover {
+    background-color: var(--btn-bg);
+    color: var(--text-white);
+    border-radius: 50%;
+}
+
+
+/* ____________________________________Home Banner Css______________________________ */
+.home-banner{
+    background-image: url(./images/memorable-main-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+.frame-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 75px;
+    left: calc(11%);
+}
+
+.frame-head{
+    font-family: var(--font-philosopher);
+    font-size: var(--text-head);
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--text-color);
+}
+.frame-icon {
+    font-size: var(--text-2);
+    color:var(--text-color);
+}
+.frame-content{
+    font-family: var(--font-inter);
+    font-size: var(--para-sm);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--text-color);
+}
+.frame-bottom{
+    font-family: var(--font-inter);
+    font-size: var(--para-sm);
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--text-color);
+    padding-top: 5px;
+    border-top: 2px solid var(--text-color);
+}
+.frame-btn{
+    font-family: var(--font-inter);
+    font-size: var(--para-sm);
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+
+
