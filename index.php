@@ -94,21 +94,19 @@
                                 </div>
                                 <img src="./assets/images/shelf-books.png" class="w-100" alt="">
                             </div>
-                            <div class="book-area mt-5">
+                            <div class="book-area">
                                 <div class="book-wrapper d-flex justify-content-center">
-                                    <img src="./assets/images/astrology-book.png" class="img-fluid" alt="">
-                                    <img src="./assets/images/Couple-Diary-book.png" class="img-fluid" alt="">
-                                    <img src="./assets/images/Special-Events-book.png" class="img-fluid" alt="">
-                                    <img src="./assets/images/In-Memory-book.png" class="img-fluid" alt="">
+                                    <img src="./assets/images/Poems-Collection.png" class="img-fluid" alt="">
+                                    <img src="./assets/images/poem-one-love.png" class="img-fluid" alt="">
+                                    <img src="./assets/images/Quotes-Collection.png" class="img-fluid" alt="">
+                                    <img src="./assets/images/Daily-Quotes-Weekly-Poems.png" class="img-fluid" alt="">
                                 </div>
                                 <img src="./assets/images/shelf-books.png" class="w-100" alt="">
                             </div>
-                            <div class="book-area mt-5">
+                            <div class="book-area">
                                 <div class="book-wrapper d-flex justify-content-center">
-                                    <img src="./assets/images/astrology-book.png" class="img-fluid" alt="">
-                                    <img src="./assets/images/Couple-Diary-book.png" class="img-fluid" alt="">
-                                    <img src="./assets/images/Special-Events-book.png" class="img-fluid" alt="">
-                                    <img src="./assets/images/In-Memory-book.png" class="img-fluid" alt="">
+                                    <img src="./assets/images/My-life-in-pictures.png" class="img-fluid" alt="">
+                                    <img src="./assets/images/The-Story-Of-My-Life.png" class="img-fluid" alt="">
                                 </div>
                                 <img src="./assets/images/shelf-books.png" class="w-100" alt="">
                             </div>
