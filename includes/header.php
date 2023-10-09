@@ -37,12 +37,14 @@
           </div>
           <div class="col-xl-5 col-lg-5 col-md-5 my-xl-0 my-3">
             <div class="btn-side d-flex justify-content-around">
+            <button id="search-btn" class="bg-transparent border-1 p-3 rounded-pill"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></button>
               <a href="#" class="btn pe-5 ps-5 py-2">Donate Now</a>
               <a href="#" class="btn pe-5 ps-5 py-2">Donate Now</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </header>

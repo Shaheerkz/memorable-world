@@ -42,7 +42,15 @@
     --font-montesserat: 'Montserrat', sans-serif ;
     font-size: 62.5%;
   }
- 
+/* custom classes */
+.pb-30 {
+    padding-bottom: 3rem;
+}
+.pt-30 {
+    padding-top: 3rem;
+}
+/* custom classes end */
+
 
 /* @media (min-width:1600px){ */
 ::-webkit-scrollbar-track {
@@ -273,7 +281,9 @@ a {
     border-radius: 50%;
 }
 
-
+i#search-icon {
+    font-size: 25px;
+}
 /* ____________________________________Home Banner Css______________________________ */
 .home-banner{
     background-image: url(./images/memorable-main-bg.png);
@@ -362,8 +372,11 @@ a {
     background:var(--window-bg-color);
 }
 .top-window{
-    border: 1rem solid #8D8E90;
+    border: 0.5rem solid #8D8E90;
     border-radius: 1rem;
+}
+.top-window img{
+    border-radius: 0.5rem;
 }
 
 .img-border{
@@ -384,4 +397,9 @@ a {
     left: 3px;
     border: 1px solid;
     border-radius: 10px;
+}
+.window-bottom img {
+    min-height: 50.4rem;
+    object-fit: cover;
+    object-position: center;
 }
